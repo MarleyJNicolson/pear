@@ -1,0 +1,20 @@
+.collection-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    h1{
+        margin-bottom: 45px;
+    }
+    &__row{
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+        .v-field__input{
+            width: 150px;
+        }
+        button{
+            margin-left: 20px;
+            margin-top: 7px;
+        }
+    }
+}

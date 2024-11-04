@@ -1,0 +1,78 @@
+.container{
+    padding: 20px;
+    h1{
+        margin-bottom: 45px;
+    }
+}
+.top-level-problem{
+    color: #fff;
+    font-weight: 600;
+    &__add-symptom{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .symptoms-container{
+        background-color: #eee;
+    }
+    &__content{
+        background-color: #ff9b91;
+        padding: 10px;
+    }
+    &__content-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .v-field__input{
+            font-size: 30px; 
+            pointer-events: none;
+        }
+        .v-field {
+            pointer-events: none;
+        }
+        .v-field--variant-filled .v-field__outline::before{
+            display: none;
+        }
+        .v-input__control{
+            width: 98%;
+        }
+        .buttons{
+            float: right;
+            display: flex;
+            flex-direction: row;
+            span{
+                color: #ffffff !important;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            .edit,.save{
+                margin-right: 10px;
+            }
+            .save{
+                opacity: 0.0;
+                position: absolute;
+                pointer-events: none;
+            }
+        }
+    }
+    &__content.can-edit{
+        .top-level-problem__content-row .v-field {
+            pointer-events: all !important;
+        }
+        .edit{
+            display: none;
+            pointer-events: none;
+        }
+        .save{
+            display: block;
+            position: relative;
+            pointer-events: all !important;
+            opacity: 1.0;
+        }
+    }
+}
+.problems-row{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}

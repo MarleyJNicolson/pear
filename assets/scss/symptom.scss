@@ -1,0 +1,82 @@
+.symptom{
+    background-color: #f3a181;
+    &__head{
+        padding: 10px;
+        z-index: 2;
+        position: relative;
+        display: block;
+        h3{
+            margin-bottom: 10px;
+        }
+    }
+    &__add{
+        button{
+            font-size: 11px;
+            margin-top: 13px;
+        }
+        margin-bottom: 10px;
+    }
+    &__input{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        background-color: #afafaf;
+        overflow: hidden;
+        height: 0px;
+        button{
+            margin-top: 18px;
+        }
+    }
+    .input__Symptom{
+        height: 67px;
+    }
+    .input__Cause{
+        height: 67px;
+    }
+    .symptoms:nth-child(2) {
+        .symptom{
+            background-color: #7b66d9;
+            position: relative;
+            padding-left: 3%;
+            .indent{
+                height: 100%;
+                width: 2%;
+                position: absolute;
+                top:0px;
+                z-index: 1;
+                left:0px;
+                display: block;
+                background-color:#f3a181c7;
+            }
+        }
+        .symptoms:nth-child(2) {
+            .symptom{
+                background-color: #ca75d8;
+                position: relative;
+                padding-left: 3%;
+                .indent{
+                    background-color:#7b66d9bf ;
+                }
+            }
+            .symptoms:nth-child(2) {
+                .symptom{
+                    background-color: #72c2b1;
+                    position: relative;
+                    padding-left: 3%;
+                    .indent{
+                        background-color:#ca75d8bd;
+                    }
+                }
+                .symptoms:nth-child(2) {
+                    .symptom{
+                        background-color: #4161b1;
+                        position: relative;
+                        padding-left: 3%;
+                        .indent{
+                            background-color:#72c2b199;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
